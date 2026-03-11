@@ -6,7 +6,7 @@ class MiNavbar extends HTMLElement {
     async connectedCallback() {
         try {
             // ACTUALIZADO: Ahora busca "navbar.html"
-            const respuesta = await fetch('/components/navbar.html');
+            const respuesta = await fetch('fetch('/GI_ALI/components/navbar.html');
             const html = await respuesta.text();
             this.innerHTML = html;
 
@@ -54,4 +54,5 @@ class MiNavbar extends HTMLElement {
 }
 
 // Seguimos usando 'mi-navbar' como etiqueta porque requiere el guion obligatorio
+
 customElements.define('mi-navbar', MiNavbar);
